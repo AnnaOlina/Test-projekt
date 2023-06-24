@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>My HTML Document</title>
+    <script src="./lektie.js"></script>
+</head>
+
+<body>
+    <input type="number"
+        id="first-value"
+        placeholder="Første værdi">
+    <input type="number"
+        id="second-value"
+        placeholder="Anden værdi">
+    <button type="button"
+        onclick="writeAdditionOf(getFirstValueAsNumber(), getSecondValueAsNumber())">
+        Plus
+    </button>
+    <button type="button"
+        onclick="writeSubtractionOf(getFirstValueAsNumber(), getSecondValueAsNumber())">
+        Minus
+    </button>
+    <button type="button"
+        onclick="writeMultiplicationOf(getFirstValueAsNumber(), getSecondValueAsNumber())">
+        Gange
+    </button>
+    <button type="button"
+        onclick="writeDivisionOf(getFirstValueAsNumber(), getSecondValueAsNumber())">
+        Dividere
+    </button>
+    <div id="result"></div>
+</body>
+
+</html>
