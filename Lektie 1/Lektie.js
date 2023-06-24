@@ -26,14 +26,34 @@ function writeAdditionOf(a, b) {
 // Opgave 1:
 // lav en funktion 'writeSubtractionOf', som trækker tal fra hinanden, og udskriver resultatet vha. writeToElement()
 
+function writeSubtractionOf(a, b) {
+    let result = a - b
+    writeToElement("Resultatet er " + result)
+}
+
 
 // Opgave 2:
 // lav en funktion 'writeMultiplicationOf', som ganger to tal med hinanden, og udskriver resultatet vha. writeToElement()
+
+function writeMultiplicationOf(a, b) {
+    let result = a * b 
+    writeToElement("Resultatet er " + result)
+}
 
 
 // Opgave 3:
 // lav en funktion 'writeDivisionOf', som deler et tal med at andet, og udskriver resultatet vha. writeToElement()
 
+function writeDivisionOf(a, b) {
+    let result = a / b 
+    writeToElement("Resultatet er " + result)
+}
+
 
 // Bonus opgave:
 // lav en funktion 'writePowerOf', som opløfter et tal i et andet, og udskriver resultatet vha. writeToElement()
+
+function writePowerOf(a, b) {
+    let result = a ** b
+    writeToElement("Resultatet er " + result)
+}
