@@ -1,59 +1,39 @@
-// Opsætningsfunktioner:
-function getValueOf(id){
-    return document.getElementById(id)?.value
-}
-
-function getFirstValueAsNumber() {
-    return +getValueOf("first-value")
-}
-
-function getSecondValueAsNumber() {
-    return +getValueOf("second-value")
-}
-
-function writeToElement(value) {
-    document.getElementById("result").innerHTML = value
-}
-
-// Opgaveeksempel:
-// lav en funktion 'writeAdditionOf', som lægger to tal sammen og udskriver resultatet vha. writeToElement()
-
-function writeAdditionOf(a, b) {
+// Funktion som returnerer resultatet af a + b
+function addNumbers(a, b) {
     let result = a + b
-    writeToElement("Resultatet er " + result)
+    return result
 }
 
-// Opgave 1:
-// lav en funktion 'writeSubtractionOf', som trækker tal fra hinanden, og udskriver resultatet vha. writeToElement()
+let x = addNumbers(10, 4)
 
-function writeSubtractionOf(a, b) {
-    let result = a - b
-    writeToElement("Resultatet er " + result)
+// Sammenlign størrelse på a og b
+let a = 100
+let b = 200
+
+if (b > a){
+    console.log("Hvis b er større end a")
+}
+if (a > b) {
+    console.log("Hvis a er større end b")
+}
+console.log("")
+
+
+// Udskriv tekst som fortæller hvilken parameter der har den største værdi
+function compare(a, b) {
+    if (b > a) {
+        console.log("Andet tal er størst")
+    }
+    if (a > b) {
+        console.log("Første tal er størst")
+    }
+    if (a === b) {
+        console.log("Tallene er ens")
+    }
 }
 
-
-// Opgave 2:
-// lav en funktion 'writeMultiplicationOf', som ganger to tal med hinanden, og udskriver resultatet vha. writeToElement()
-
-function writeMultiplicationOf(a, b) {
-    let result = a * b 
-    writeToElement("Resultatet er " + result)
-}
-
-
-// Opgave 3:
-// lav en funktion 'writeDivisionOf', som deler et tal med at andet, og udskriver resultatet vha. writeToElement()
-
-function writeDivisionOf(a, b) {
-    let result = a / b 
-    writeToElement("Resultatet er " + result)
-}
-
-
-// Bonus opgave:
-// lav en funktion 'writePowerOf', som opløfter et tal i et andet, og udskriver resultatet vha. writeToElement()
-
-function writePowerOf(a, b) {
-    let result = a ** b
-    writeToElement("Resultatet er " + result)
-}
+// Tests:
+compare(90, 100) // skal vise "Andet tal er størst"
+compare(2, -17) // skal vise "Første tal er størst"
+compare(2.65, 2.66) // skal vise "Andet tal er størst"
+compare(10, 10) // skal vise "Tallene er ens"
