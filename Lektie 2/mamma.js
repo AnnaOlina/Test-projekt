@@ -31,12 +31,20 @@ test(getGreetingFor("asdf2341"), "Hej asdf2341")
 // ---------------
 // Opgave 1: Lav en funktion, getGreeting(), der returnerer "hejsa"
 
+function getGreeting() {
+	return "hejsa"
+}
+
 // Opgave 1 tests:
 console.log("Opgave 1 - getGreeting:")
 test(getGreeting(), "hejsa")
 
 // ---------------
 // Opgave 2: Lav en funktion, multiply(a, b), der ganger to tal sammen
+
+function multiply(a, b) {
+	 return a * b
+}
 
 // Opgave 2 tests
 console.log("Opgave 2 - multiply")
@@ -48,6 +56,10 @@ test(multiply(-3, 4), -12)
 // Opgave 3: Lav en funktion, getNiceGreeting(person), der returnerer en hilsen til en person
 // Se testene nedenunder for hvordan hilsnerne skal se ud.
 
+function getNiceGreeting(person) {
+	return "Godt at se dig, " + person + "!" 
+}
+
 // Opgave 3 tests
 console.log("Opgave 3 - getNiceGreeting")
 test(getNiceGreeting("Sanna"), "Godt at se dig, Sanna!")
@@ -58,6 +70,10 @@ test(getNiceGreeting(""), "Godt at se dig, !")
 // ---------------
 // Opgave 4: Lav en funktion, sum(a,b,c), der lægger tre tal sammen
 
+function sum(a,b,c) {
+	return a + b + c 
+}
+
 // Opgave 4 tests
 console.log("Opgave 4 - sum")
 test(sum(1, 1, 1), 3)
@@ -67,6 +83,15 @@ test(sum(-1002, 647, 355), 0)
 // ---------------
 // Opgave 5: Lav en funktion, getSecret(password), der giver en hemmelighed, hvis den får koden '008'
 // Se testene nedenunder for hvordan outputtet skal se ud.
+
+function getSecret(password) {
+	if (password === "008") {
+		return "Julemanden findes ikke"
+	}
+	if (password !== "008") {
+		return "Forkert kode"
+	}
+}
 
 // Opgave 5 tests
 console.log("Opgave 5 - getSecret")
