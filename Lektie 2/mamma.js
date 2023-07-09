@@ -101,7 +101,12 @@ test(getSecret("008"), "Julemanden findes ikke")
 test(getSecret(876543), "Forkert kode")
 
 // ---------------
-// Opgave 6: Lav en funktion, kilometersFromMeters(meters), der konverterer meter til kilometer
+// Opgave 6: Lav en funktion, kilometersFromMeters(meters),
+// der konverterer meter til kilometer
+
+function kilometersFromMeters(meters) {
+	return meters / 1000
+}
 
 // Opgave 6 tests
 console.log("Opgave 6 - kilometersFromMeters")
@@ -115,6 +120,16 @@ test(kilometersFromMeters(2400000), 2400)
 // Opgave 7: Lav en funktion, describeAge(age), som returner "barn" eller "voksen",
 // alt efter om alderen er under 18 eller ej
 
+function describeAge(age) {
+	if (age >17) {
+		return "voksen"
+	}
+
+	if (age <18) {
+		return "barn"
+	}
+}
+
 // Opgave 7 tests
 console.log("Opgave 7 - describeAge")
 test(describeAge(2), "barn")
@@ -127,6 +142,9 @@ test(describeAge(17), "barn")
 // Gør brug af describeAge() funktionen fra før til at løse opgaven.
 // Se testene nedenunder for hvordan outputtet skal se ud. 
 
+function describePerson(navn, age) {
+	return navn + " er " + describeAge(age) 
+}
 // Opgave 8 tests
 console.log("Opgave 8 - describePerson")
 test(describePerson("Bjørn", 26), "Bjørn er voksen")
