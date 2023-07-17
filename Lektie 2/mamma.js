@@ -157,6 +157,10 @@ test(describePerson("Akhzul-Molaar, Første Kejser-Konge af det Intergalaktiske 
 // Opgave 9: Lav en funktion, ageFromBirthYear(birthYear, currentYear),
 // som regner en omtrent alder ud, ud fra et fødselsår og det nuværende år.
 
+function ageFromBirthYear(birthYear, currentYear) {
+	return currentYear - birthYear 
+}
+
 // Opgave 9 tests
 console.log("Opgave 9 - ageFromBirthYear")
 test(ageFromBirthYear(1990, 2023), 33)
@@ -166,6 +170,20 @@ test(ageFromBirthYear(2001, 2023), 22)
 // ---------------
 // Opgave 10: Lav en funktion, getOldest(personA, ageA, personB, ageB),
 // som returnerer navnet på den ældste af to personer, eller "Lige gamle", hvis det er ens
+
+function getOldest(personA, ageA, personB, ageB) {
+	if (personA, ageA < personB, ageB) {
+		return personB
+	}
+
+	if (personA, ageA > personB, ageB) {
+		return personA 
+	}
+
+	if (personA, ageA === personB, ageB) {
+		return "Lige gamle"
+	}
+}
 
 // Opgave 10 tests
 console.log("Opgave 10 - getOldest")
