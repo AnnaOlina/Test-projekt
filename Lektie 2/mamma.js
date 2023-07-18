@@ -172,15 +172,15 @@ test(ageFromBirthYear(2001, 2023), 22)
 // som returnerer navnet på den ældste af to personer, eller "Lige gamle", hvis det er ens
 
 function getOldest(personA, ageA, personB, ageB) {
-	if (personA, ageA < personB, ageB) {
+	if (ageA < ageB) {
 		return personB
 	}
 
-	if (personA, ageA > personB, ageB) {
+	if (ageA > ageB) {
 		return personA 
 	}
 
-	if (personA, ageA === personB, ageB) {
+	if (ageA === ageB) {
 		return "Lige gamle"
 	}
 }
