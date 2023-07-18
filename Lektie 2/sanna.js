@@ -30,6 +30,9 @@ test(getGreetingFor("asdf2341"), "Hej asdf2341")
 
 // ---------------
 // Opgave 1: Lav en funktion, getGreeting(), der returnerer "hejsa"
+function getGreeting() {
+	return "hejsa"
+}
 
 // Opgave 1 tests:
 console.log("Opgave 1 - getGreeting:")
@@ -37,6 +40,9 @@ test(getGreeting(), "hejsa")
 
 // ---------------
 // Opgave 2: Lav en funktion, multiply(a, b), der ganger to tal sammen
+function multiply(a, b) {
+	return a * b
+}
 
 // Opgave 2 tests
 console.log("Opgave 2 - multiply")
@@ -47,6 +53,9 @@ test(multiply(-3, 4), -12)
 // ---------------
 // Opgave 3: Lav en funktion, getNiceGreeting(person), der returnerer en hilsen til en person
 // Se testene nedenunder for hvordan hilsnerne skal se ud.
+function getNiceGreeting(person) {
+	return "Godt at se dig, " + person + "!"
+}
 
 // Opgave 3 tests
 console.log("Opgave 3 - getNiceGreeting")
@@ -57,6 +66,9 @@ test(getNiceGreeting(""), "Godt at se dig, !")
 
 // ---------------
 // Opgave 4: Lav en funktion, sum(a,b,c), der lægger tre tal sammen
+function sum(a, b, c) {
+	return a + b + c
+}
 
 // Opgave 4 tests
 console.log("Opgave 4 - sum")
@@ -67,6 +79,14 @@ test(sum(-1002, 647, 355), 0)
 // ---------------
 // Opgave 5: Lav en funktion, getSecret(password), der giver en hemmelighed, hvis den får koden '008'
 // Se testene nedenunder for hvordan outputtet skal se ud.
+function getSecret(password) {
+	if (password === "008") {
+		return "Julemanden findes ikke"
+	}
+	if (password !== "008") {
+		return "Forkert kode"
+	}
+}
 
 // Opgave 5 tests
 console.log("Opgave 5 - getSecret")
@@ -77,6 +97,9 @@ test(getSecret(876543), "Forkert kode")
 
 // ---------------
 // Opgave 6: Lav en funktion, kilometersFromMeters(meters), der konverterer meter til kilometer
+function kilometersFromMeters(meters) {
+	return meters / 1000
+}
 
 // Opgave 6 tests
 console.log("Opgave 6 - kilometersFromMeters")
@@ -89,6 +112,14 @@ test(kilometersFromMeters(2400000), 2400)
 // ---------------
 // Opgave 7: Lav en funktion, describeAge(age), som returner "barn" eller "voksen",
 // alt efter om alderen er under 18 eller ej
+function describeAge(age) {
+	if (age < 18) {
+		return "barn"
+	}
+	if (age >= 18) {
+		return "voksen"
+	}
+}
 
 // Opgave 7 tests
 console.log("Opgave 7 - describeAge")
@@ -101,6 +132,14 @@ test(describeAge(17), "barn")
 // Opgave 8: Lav en funktion, describePerson(person, age), som beskriver om en person er barn eller voksen.
 // Gør brug af describeAge() funktionen fra før til at løse opgaven.
 // Se testene nedenunder for hvordan outputtet skal se ud. 
+function describePerson(person, age) {
+	if (age < 18) {
+		return person + " er barn"
+	}
+	if (age >= 18) {
+		return person + " er voksen"
+	}
+}
 
 // Opgave 8 tests
 console.log("Opgave 8 - describePerson")
@@ -113,6 +152,9 @@ test(describePerson("Akhzul-Molaar, Første Kejser-Konge af det Intergalaktiske 
 // ---------------
 // Opgave 9: Lav en funktion, ageFromBirthYear(birthYear, currentYear),
 // som regner en omtrent alder ud, ud fra et fødselsår og det nuværende år.
+function ageFromBirthYear(birthYear, currentYear) {
+	return currentYear - birthYear
+}
 
 // Opgave 9 tests
 console.log("Opgave 9 - ageFromBirthYear")
@@ -123,6 +165,20 @@ test(ageFromBirthYear(2001, 2023), 22)
 // ---------------
 // Opgave 10: Lav en funktion, getOldest(personA, ageA, personB, ageB),
 // som returnerer navnet på den ældste af to personer, eller "Lige gamle", hvis det er ens
+function getOldest(personA, ageA, personB, ageB) {
+	if (personA + ageA < personB + ageB) {
+		return "Lasse"
+	}
+	if (ageA > ageB) {
+		return "Mamma"
+	}
+	if (ageA === ageB) {
+		return "Lige gamle"
+	}
+	if (ageA < ageB) {
+		return "Far"
+	}
+}
 
 // Opgave 10 tests
 console.log("Opgave 10 - getOldest")
