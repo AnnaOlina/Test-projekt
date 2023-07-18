@@ -166,17 +166,14 @@ test(ageFromBirthYear(2001, 2023), 22)
 // Opgave 10: Lav en funktion, getOldest(personA, ageA, personB, ageB),
 // som returnerer navnet på den ældste af to personer, eller "Lige gamle", hvis det er ens
 function getOldest(personA, ageA, personB, ageB) {
-	if (personA + ageA < personB + ageB) {
-		return "Lasse"
+	if (ageA < ageB) {
+		return personB
 	}
 	if (ageA > ageB) {
-		return "Mamma"
+		return personA
 	}
 	if (ageA === ageB) {
 		return "Lige gamle"
-	}
-	if (ageA < ageB) {
-		return "Far"
 	}
 }
 
