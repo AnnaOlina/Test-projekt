@@ -32,7 +32,9 @@ test(isLeapYear(1967), false)
 
 // ---------------
 // Opgave 1: Lav en funktion, getFullName(firstName, lastName), der returnerer det fulde navn.
-
+function getFullName(firstName, lastName) {
+	return firstName + " " + lastName
+}
 
 // Opgave 1 tests:
 console.log("Opgave 1 - getFullName:")
@@ -42,7 +44,14 @@ test(getFullName("Karina Mariette", "Øllebølle"), "Karina Mariette Øllebølle
 
 // ---------------
 // Opgave 2: Lav en funktion, isPositive(number), som returnerer true, hvis tallet er positivt 
-
+function isPositive(number) {
+	if (number >= 0) {
+		return true
+	}
+	if (number < 0) {
+		return false
+	}
+}
 
 // Opgave 2 tests
 console.log("Opgave 2 - isPositive")
@@ -54,7 +63,14 @@ test(isPositive(-999.999), false)
 
 // ---------------
 // Opgave 3: Lav en funktion, isEven(number), som returnerer true, hvis tallet er lige, ellers false.
-
+function isEven(number) {
+	if (number % 2 === 0) {
+		return true
+	}
+	else {
+		return false
+	}
+}
 
 // Opgave 3 tests
 console.log("Opgave 3 - isEven")
