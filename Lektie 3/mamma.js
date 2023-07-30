@@ -66,8 +66,8 @@ test(isPositive(-999.999), false)
 // Opgave 3: Lav en funktion, isEven(number), som returnerer true, hvis tallet er lige, ellers false.
 
 function isEven(number) {
-	if (number / 2 === 0)
-	return true 
+	if (number % 2 === 0)
+	return true
 	else return false 
 }
 
@@ -85,6 +85,9 @@ test(isEven(679), false)
 // Opgave 4: Lav en funktion, randomNumber(max), der returnerer et tilfældigt tal mellem 0 og max
 // I får brug for Math.random()
 
+function randomNumber(max) {
+	return Math.random() * max 
+}
 
 // Opgave 4 tests
 console.log("Opgave 4 - randomNumber")
