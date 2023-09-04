@@ -34,7 +34,7 @@ test(isLeapYear(1967), false)
 // Opgave 1: Lav en funktion, getFullName(firstName, lastName), der returnerer det fulde navn.
 
 function getFullName(firstName, lastName) {
-	return firstName + " " + lastName 
+	return firstName + " " + lastName
 }
 
 
@@ -48,10 +48,12 @@ test(getFullName("Karina Mariette", "Øllebølle"), "Karina Mariette Øllebølle
 // Opgave 2: Lav en funktion, isPositive(number), som returnerer true, hvis tallet er positivt 
 
 function isPositive(number) {
-	if (number < 0)
-	return false 
-	if (number > -1) 
-	return true 
+	if (number < 0) {
+		return false
+	}
+	else {
+		return true
+	}
 }
 
 // Opgave 2 tests
@@ -67,8 +69,8 @@ test(isPositive(-999.999), false)
 
 function isEven(number) {
 	if (number % 2 === 0)
-	return true
-	else return false 
+		return true
+	else return false
 }
 
 
@@ -86,12 +88,12 @@ test(isEven(679), false)
 // I får brug for Math.random()
 
 function randomNumber(max) {
-	return Math.random() * max 
+	return Math.random() * max
 }
 
 // Opgave 4 tests
 console.log("Opgave 4 - randomNumber")
-function testOpgave4(result, max){
+function testOpgave4(result, max) {
 	test(result < max, true)
 	test(0 <= result, true)
 }
@@ -106,7 +108,7 @@ testOpgave4(randomNumber(2), 2)
 
 // Opgave 5 tests
 console.log("Opgave 5 - randomInteger")
-function testOpgave5(result, max){
+function testOpgave5(result, max) {
 	test(result, Math.floor(result))
 	test(result < max, true)
 	test(0 <= result, true)
@@ -122,7 +124,7 @@ testOpgave5(randomInteger(2), 2)
 
 // Opgave 6 tests
 console.log("Opgave 6 - rollDie")
-function testOpgave6(result){
+function testOpgave6(result) {
 	test(result, Math.floor(result))
 	test(result < 7, true)
 	test(1 <= result, true)
