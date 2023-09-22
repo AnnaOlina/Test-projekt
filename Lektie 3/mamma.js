@@ -105,6 +105,10 @@ testOpgave4(randomNumber(2), 2)
 // Opgave 5: Lav en funktion, randomInteger(max), der returnerer et tilfældigt heltal mellem 0 og max
 // I får brug for Math.random() og Math.floor()
 
+function randomInteger(max){
+	let tal = Math.random() * max
+	return Math.floor(tal)
+}
 
 // Opgave 5 tests
 console.log("Opgave 5 - randomInteger")
