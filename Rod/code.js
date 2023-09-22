@@ -16,3 +16,15 @@ function randomInteger(max) {
 function rollDie() {
 	return randomInteger(6) + 1
 }
+
+
+function lottotal() {
+	let tal1 = randomInteger(36) + 1
+	let tal2 = randomInteger(36) + 1
+	let tal3 = randomInteger(36) + 1
+	let tal4 = randomInteger(36) + 1
+	let tal5 = randomInteger(36) + 1
+	let tal6 = randomInteger(36) + 1
+	let tal7 = randomInteger(36) + 1
+	return "lottotal: " + tal1 + ", " + tal2 + ", " + tal3 + ", " + tal4 + ", " + tal5 + ", " + tal6 + ", " + tal7 
+}
