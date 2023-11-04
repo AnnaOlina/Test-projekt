@@ -1,4 +1,6 @@
-let list = ["rend", "og", "hop", "hest"]
+let listA = ["rend", "og", "hop", "hest"]
+let listB = ["en", "ny", "liste", "med", "ord"]
+let list = listB
 
 let counter = 0
 
